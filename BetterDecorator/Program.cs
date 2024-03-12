@@ -3,8 +3,16 @@ using System.Globalization;
 
 namespace BetterDecorator
 {
+    /// <summary>
+    /// 
+    /// </summary>
     class Program
     {
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="args"></param>
         private static void Main(string[] args)
         {
 
@@ -15,11 +23,19 @@ namespace BetterDecorator
 
             int i = int.Parse(args[2]);
 
+
             // calling Decor method
             Decor(s, c, i);
         }
 
 
+        /// <summary>
+        /// Adds a character to the beginning and end of a string
+        /// 
+        /// </summary>
+        /// <param name="s"></param>
+        /// <param name="dec"></param>
+        /// <param name="i"></param>
         private static void Decor(string s , char dec, int i)
         {
 
