@@ -9,12 +9,15 @@ namespace BetterDecorator
     {
 
         /// <summary>
-        ///   
+        ///  Main checks if user passed 3 args or more.
+        ///  If so, it will call Decor with the 3 args.
+        ///  else, it it call a empty Decor
         /// </summary>
         /// <param name="args">Used to send 3 variables to decor</param>
         private static void Main(string[] args)
         {
 
+            // check if user passed 3 args or more
             if(args.Length >= 3)
             {
                 // indexation & convertion of the variables
@@ -30,7 +33,7 @@ namespace BetterDecorator
 
             }
 
-
+            // else, call a default Decor
             else
             {
                 Decor();
@@ -51,9 +54,10 @@ namespace BetterDecorator
         private static string Decor(string s , char dec, int i)
         {
 
-            // add in each side of the string the character dec i times
+            
             string result = "";
 
+            // add in the left side, dec i times
             for (int a = 0; a < i; a++)
             {
                 result += dec;
@@ -61,11 +65,13 @@ namespace BetterDecorator
 
             result += " " + s + " ";
 
+            // add in the right side, dec i times
             for (int b = 0; b < i; b++)
             {
                 result += dec;
             }
 
+            // return the result of the string
             return result;
         }
 
@@ -73,7 +79,7 @@ namespace BetterDecorator
         /// <summary>
         /// 
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Returns </returns>
         private static string Decor()
         {
 
