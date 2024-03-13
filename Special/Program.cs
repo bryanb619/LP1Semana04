@@ -31,8 +31,18 @@ namespace Special
             {
                 calcResult = 0;
             } 
+
+            else if(n == 1)
+            {
+                calcResult = 1;
+            }
+
+            else
+            {
+                calcResult = GetSpecial(n-1) + GetSpecial(n-2);
+            }
         
-            return n;
+            return calcResult;
         }
     }
 }
