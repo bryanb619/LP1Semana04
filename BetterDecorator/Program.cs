@@ -3,18 +3,20 @@
 namespace BetterDecorator
 {
     /// <summary>
-    ///  Basic Program, 
+    ///  Basic Program
     /// </summary>
     class Program
     {
 
         /// <summary>
-        /// 
+        ///   
         /// </summary>
-        /// <param name="args"></param>
+        /// <param name="args">Used to send 3 variables to decor</param>
         private static void Main(string[] args)
         {
 
+
+    
             // indexation
             string s = args[0];
 
@@ -29,12 +31,13 @@ namespace BetterDecorator
 
 
         /// <summary>
-        /// Adds a character to the beginning and end of a string
-        /// 
+        ///  Receives 3 types of variables and returns a 
+        /// string concatenated in each side with with a char i times
         /// </summary>
-        /// <param name="s"></param>
-        /// <param name="dec"></param>
-        /// <param name="i"></param>
+        /// <param name="s"> To be received from user </param>
+        /// <param name="dec">Added in each side of the string s</param>
+        /// <param name="i">Controls how many times the char is repeated in each side </param>
+        /// <returns>returns a string concatenated in each side with with a char</returns>
         private static string Decor(string s , char dec, int i)
         {
 
