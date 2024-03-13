@@ -8,7 +8,7 @@ namespace Special
         {
 
             // request a number from the user
-            Console.WriteLine("Insert a number: ");
+            Console.Write("Insert a number: ");
 
             // convert  input to int
             int n = int.Parse(Console.ReadLine());
