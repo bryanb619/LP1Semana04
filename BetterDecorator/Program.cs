@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Globalization;
 
 namespace BetterDecorator
 {
     /// <summary>
-    /// 
+    ///  Basic Program, 
     /// </summary>
     class Program
     {
@@ -23,9 +22,9 @@ namespace BetterDecorator
 
             int i = int.Parse(args[2]);
 
+            string result = Decor(s, c, i);
 
-            // calling Decor method
-            Decor(s, c, i);
+            Console.WriteLine(result);
         }
 
 
@@ -36,20 +35,31 @@ namespace BetterDecorator
         /// <param name="s"></param>
         /// <param name="dec"></param>
         /// <param name="i"></param>
-        private static void Decor(string s , char dec, int i)
+        private static string Decor(string s , char dec, int i)
         {
 
             // add in each side of the string the character dec i times
+            string result = "";
 
-            for (int x = 0; i < x; x++)
+            for (int a = 0; a < i; a++)
             {
-                // TODO: add ESPACE BEFORE AND AFTER THE STRING
-                s = dec + s + dec;
+                result += dec;
             }
 
-            Console.WriteLine(s);
+            result += " " + s + " ";
+
+            for (int b = 0; b < i; b++)
+            {
+                result += dec;
+            }
+
+            return result;
+        }
 
 
+        private static string Decor()
+        {
+            return "User";
         }
     }
 }
