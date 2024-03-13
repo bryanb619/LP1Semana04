@@ -39,7 +39,7 @@ namespace Special
 
             else
             {
-                calcResult = GetSpecial(n-1) + GetSpecial(n-2);
+                calcResult = GetSpecial(n-1) + 2 * GetSpecial(n-2);
             }
         
             return calcResult;
