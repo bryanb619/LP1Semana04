@@ -36,7 +36,7 @@ namespace BetterDecorator
             // else, call a default Decor
             else
             {
-                Decor();
+                Console.WriteLine(Decor());  
             }
     
             
@@ -77,14 +77,13 @@ namespace BetterDecorator
 
 
         /// <summary>
-        /// 
+        ///  Method returns a string with a default message while calling the 
+        ///  1st Decor method generating a overloading situation
         /// </summary>
         /// <returns>Returns </returns>
         private static string Decor()
         {
-
-            return Decor("User did not specify args !", '=', 3);
-            
+            return Decor("User did not specify args!", '=', 3);   
         }
     }
 }
