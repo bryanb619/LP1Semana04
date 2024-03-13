@@ -15,18 +15,28 @@ namespace BetterDecorator
         private static void Main(string[] args)
         {
 
+            if(args.Length >= 3)
+            {
+                // indexation & convertion of the variables
+                string s = args[0];
 
+                char c =  char.Parse(args[1]);
+
+                int i = int.Parse(args[2]);
+
+                string result = Decor(s, c, i);
+
+                Console.WriteLine(result);
+
+            }
+
+
+            else
+            {
+                Decor();
+            }
     
-            // indexation
-            string s = args[0];
-
-            char c =  char.Parse(args[1]);
-
-            int i = int.Parse(args[2]);
-
-            string result = Decor(s, c, i);
-
-            Console.WriteLine(result);
+            
         }
 
 
@@ -60,9 +70,15 @@ namespace BetterDecorator
         }
 
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         private static string Decor()
         {
-            return "User";
+
+            return Decor("User did not specify args !", '=', 3);
+            
         }
     }
 }
