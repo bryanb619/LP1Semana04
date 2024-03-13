@@ -4,13 +4,17 @@ namespace Special
 {
     class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-           
+           Console.WriteLine("Insert a number: ");
+
+           int n = int.Parse(Console.ReadLine());
         }
 
         private static int GetSpecial( int n)
         {
+
+        
             return n;
         }
     }
