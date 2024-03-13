@@ -16,12 +16,21 @@ namespace Special
             // request result from operation
             int result = GetSpecial(n);
 
+            // print result
+            Console.WriteLine(result);
+
 
         }
 
-        private static int GetSpecial( int n)
+        private static int GetSpecial(int n)
         {
 
+            int calcResult; 
+
+            if (n== 0)
+            {
+                calcResult = 0;
+            } 
         
             return n;
         }
