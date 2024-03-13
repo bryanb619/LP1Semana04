@@ -6,9 +6,17 @@ namespace Special
     {
         private static void Main(string[] args)
         {
-           Console.WriteLine("Insert a number: ");
 
-           int n = int.Parse(Console.ReadLine());
+            // request a number from the user
+            Console.WriteLine("Insert a number: ");
+
+            // convert  input to int
+            int n = int.Parse(Console.ReadLine());
+
+            // request result from operation
+            int result = GetSpecial(n);
+
+
         }
 
         private static int GetSpecial( int n)
