@@ -3,15 +3,18 @@
 namespace BetterDecorator
 {
     /// <summary>
-    ///  Basic Program
+    ///  Basic Program, receives 3 argument in the console and converts them into
+    /// string, char and int respectively.
+    /// 
     /// </summary>
     class Program
     {
 
         /// <summary>
         ///  Main checks if user passed 3 args or more.
-        ///  If so, it will call Decor with the 3 args.
-        ///  else, it it call a empty Decor
+        ///  If successful, calls Decor() with the 3 args.
+        ///  else, it it call a default Decor(NO param) that will call 
+        /// our main Decor(string, char, int) prompting a default reply
         /// </summary>
         /// <param name="args">Used to send 3 variables to decor</param>
         private static void Main(string[] args)
@@ -80,7 +83,7 @@ namespace BetterDecorator
         ///  Method returns a string with a default message while calling the 
         ///  1st Decor method generating a overloading situation
         /// </summary>
-        /// <returns>Returns </returns>
+        /// <returns>Returns a string, char and a int</returns>
         private static string Decor()
         {
             return Decor("User did not specify args!", '=', 3);   
