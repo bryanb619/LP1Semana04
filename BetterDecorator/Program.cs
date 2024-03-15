@@ -3,9 +3,9 @@
 namespace BetterDecorator
 {
     /// <summary>
-    ///  Basic Program, receives 3 argument in the console and converts them into
-    /// string, char and int respectively.
-    /// 
+    ///  Basic Program that receives 3 argument in the console and converts 
+    ///  them into string, char and int respectively (s,c,i).
+    ///  Passes the variables to Decor function accordingly 
     /// </summary>
     class Program
     {
